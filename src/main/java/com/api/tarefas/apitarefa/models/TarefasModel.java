@@ -18,13 +18,10 @@ public class TarefasModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-
     @Column(length = 45)
     private String titulo;
-
     @Column(nullable = false, length = 200)
     private String tarefa;
-
     @Column(nullable = false)
     private LocalDateTime registrationDate;
 
